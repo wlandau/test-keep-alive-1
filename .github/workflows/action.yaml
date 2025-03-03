@@ -1,0 +1,14 @@
+name: issues
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '5 4 1 * *'
+
+jobs:
+  issues:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: test
+        run: echo hi
